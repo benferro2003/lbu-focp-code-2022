@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from statistics import mean, median
+from statistics import mean, median, stdev
 
 
 if __name__ == '__main__':
@@ -21,16 +21,13 @@ if __name__ == '__main__':
             print('Error. Value is not a valid mark.')
 
     try:
-        max_mark = max(marks)
-        min_mark = min(marks)
-        avg_mark = mean(marks)
-
         print()
 
-        print('Highest Mark:  ', max_mark)
-        print('Lowest Mark:   ', min_mark)
-        print('Average Mark:  ', round(avg_mark, 2))
-        print('Median Mark:   ', median(marks))
+        print(f'Highest Mark: {max(marks):6}')
+        print(f'Lowest Mark:  {min(marks):6}')
+        print(f'Average Mark: {mean(marks):6.2f}')
+        print(f'Median Mark:  {median(marks):6.2f}')
+        print(f'Median Mark:  {stdev(marks):6.2f}')
 
     except ValueError:
         print('No data entered. Nothing to do. How sad.')
