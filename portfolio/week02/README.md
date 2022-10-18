@@ -7,7 +7,7 @@ labs.
 * `hello_name.py` is the canonical second program.
 * `c_to_f.py` converts a temperature in Celsius to Fahrenheit.
 * `lab_divider.py` calculates the number of lab groups needed for a group of students.
-* `sweet_splitter` divides a tub of sweets between pupils (and is in fact exactly the same program as above!).
+* `sweet_splitter.py` divides a tub of sweets between pupils (and is in fact exactly the same program as above!).
 
 
 These programs are limited to using the programming ideas included
