@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-
 if __name__ == '__main__':
-    sweets = int(input('How many students? '))
-    pupils = int(input('Required group size? '))
+    print('Checkpoint task 2 - BEN FERRO')
+    slices = int(input('How many slices of spam one requires?'))
+    while slices < 1:
+        slices = int(input('How many slices of spam one requires?'))
 
-    sweets_per_pupil = sweets // pupils
-    left_over = sweets % pupils
-
-    print(f'There will be {sweets_per_pupil} sweet{"s" if sweets_per_pupil > 1 else ""} for each pupil with '
-          f'{left_over} sweet{"s" if left_over > 1 else ""} left over.')
+    spam = 'spam, '
+    print(f'Egg with {spam*(slices-1) + "and spam coming up" if slices > 1 else"spam coming up!"}')
